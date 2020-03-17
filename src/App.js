@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
-
+import { Link } from 'react-router-dom'
 import Typography from '@material-ui/core/Typography';
 import { Button } from '@material-ui/core'
 import './style.css';
 import Grid from '@material-ui/core/Grid';
+
 
  
 function App() {
@@ -23,17 +24,21 @@ function App() {
       </Grid>
       <div>
         <Grid item xs={4} >
+          <Link to='/Login'>
 <Button variant="raised" color="primary" style={{backgroundColor: "#2196F3"}}>
         Login
       </Button>
+      </Link>
       </Grid>
       </div>
       
 <div>
       <Grid item xs={4} >
+        <Link to='/Register'>
 <Button variant="raised" color="primary" style={{backgroundColor: "#2196F3"}}>
         Register
       </Button>
+      </Link>
       </Grid>
       </div>
       
